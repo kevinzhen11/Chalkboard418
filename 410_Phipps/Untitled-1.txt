@@ -1,0 +1,5 @@
+CREATE TABLE lab {
+    labID int not null primary identity,
+    patientId int not null foreign key references patient(patientId),
+    diagnosisId into not null foreign key references diagnosis(diagnosisId)
+}
