@@ -9,7 +9,7 @@ var con = mysql.createConnection({
 con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
-  var sql = "INSERT INTO `test3`(`name`,`email`, `description`) VALUES ('myface','something@email.com','lolloooll')";
+  var sql = "INSERT INTO `test3`(`name`,`email`, `description`) VALUES ('kevin','something@email.com','kevin34 vs kevin 2')";
   con.query(sql, function (err, result) {
     if (err) throw err;
     console.log("Row inserted");
